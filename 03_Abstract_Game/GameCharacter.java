@@ -1,8 +1,6 @@
 public abstract class GameCharacter {
-    // State (instance variable) shared by all subclasses
     protected String name;
 
-    // Constructor (shared logic) to initialize the state
     public GameCharacter(String name) {
         this.name = name;
     }
@@ -12,6 +10,6 @@ public abstract class GameCharacter {
         System.out.println(name + " is walking...");
     }
 
-    // Abstract method (unique behavior) - must be implemented by subclasses
+    // Abstract method (unique behavior)
     public abstract void attack();
 }
